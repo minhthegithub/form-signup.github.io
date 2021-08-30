@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      href="https://data.whicdn.com/images/334466612/original.png"
+    />
+    <title>Form đăng ký</title>
+  </head>
+  <body>
+    <div class="wrap" id="wrap">
+      <!--  -->
+      <div class="change-color-wrap">
+        <div class="circle circle-blue" onclick="toBlue()"></div>
+        <div class="circle circle-pink" onclick="toPink()"></div>
+      </div>
+      <!--  -->
+      <div class="container">
+        <div class="flex__box-1">
+          <img
+            src="https://data.whicdn.com/images/334466612/original.png"
+            alt=""
+          />
+        </div>
+        <div class="flex__box-2">
+          <div class="form__container">
+            <!-- <div class=""> -->
+            <div class="selected__form">
+              <button class="sign-up selected">Đăng ký</button>
+              <button class="sign-in">Đăng nhập</button>
+            </div>
+            <p class="sign__up-title">Đăng ký</p>
+            <!-- form -->
+            <form action="" class="sign__up-form">
+              <label for="name">Họ tên đầy đủ</label>
+              <input
+                type="text"
+                placeholder="Nhập tên của bạn ..."
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Nhập tên của bạn ...'"
+                id="name"
+                name="name"
+                minlength="3"
+                autofocus
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                placeholder="Nhập email của bạn ..."
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Nhập email của bạn ...'"
+                id="email"
+                name="email"
+                required
+              />
+              <label for="password">Mật khẩu</label>
+              <input
+                type="password"
+                placeholder="********"
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder = '********'"
+                id="password"
+                name="password"
+                maxlength="8"
+                required
+              />
+              <label for="confirm-password">Nhập lại mật khẩu</label>
+              <input
+                type="password"
+                placeholder="********"
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder = '********'"
+                id="confirm-password"
+                name="password"
+                maxlength="8"
+                required
+              />
+              <p>
+                Bằng cách nhấn nút đăng ký bạn đồng ý đã với<br /><a href="#"
+                  >Điều khoản sử dụng của chúng tôi</a
+                >
+              </p>
+              <button class="submit-btn">Đăng ký</button>
+            </form>
+            <!-- </div> -->
+            <!-- <div class="sign__in"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="./main.js"></script>
+  </body>
+</html>
